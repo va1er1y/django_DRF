@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 # TODO: опишите необходимые сериализаторы
-from smart_home.measurement.models import transmitter, temperature_measure
+from .models import transmitter, temperature_measure
 
 
 class MeasurementSerializer(serializers.ModelSerializer):
@@ -15,4 +15,4 @@ class SensorDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = transmitter
-        fields = ['id', 'name', 'description', 'value']
+        fields = ['id', 'name', 'description', 'measurements']

@@ -5,5 +5,5 @@ from django.urls import path
 from .views import measure, sensor
 
 urlpatterns = [
-         path('/sensors/', sensor.as_view()),
+         path('sensors/', sensor.as_view()),
 ]
